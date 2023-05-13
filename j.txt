@@ -1,0 +1,42 @@
+100, saumya, ritik, tushar, kuhu
+
+payer : saumya
+
+ritik : 25
+tushar : 25
+kuhu :25
+saumya : 25
+
+saumya : 25
+ritik : -25
+tushar : -25
+kuhu : -25
+
+
+
+expense {
+
+}
+
+
+u1---> u2(a2) u3(a3), u4 (a4)
+
+DueTable {
+    payer sharedWith amount
+     u1      u2        a1 
+     u1      u3        a1  
+     u1      u4        a1  
+     u1      u2        a1   
+}
+
+
+dueAmount
+{
+    userId : u1
+    due : Map<        u2        a1 
+                      u3        a1  
+                      u4        a1  
+                      u2        a1  
+                      u4        a1
+            >
+}
